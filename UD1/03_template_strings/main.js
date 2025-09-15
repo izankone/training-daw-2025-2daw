@@ -1,4 +1,6 @@
 function hello(name, lastname, years) {
+    //return  "Hola" + name + "John" + lastname+ "tienes"+ years + "años de edad" , tienes 47 años de edad" 
+ return `Hola ${name} ${lastname}, tienes ${years} años de edad`
 }
 
 let result = hello('John', 'Anderton', 35)
