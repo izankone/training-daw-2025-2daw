@@ -1,7 +1,13 @@
 function printMultiplicationTables() {
-
-}
-
+for (let i = 0; i < 10; i++) {
+            let row = '';
+            for (let j = 1; j <= 10; j++) {
+                row += i * j + ' ';
+            }
+            console.log(row);
+        }
+    }
+      
 printMultiplicationTables()
 // expected output
 //     1   2   3   ...
@@ -15,3 +21,21 @@ printMultiplicationTables()
 // 8   8   16  24  ...
 // 9   9   18  27  ...
 // 10  10  20  30  ...
+//OTRA FORMA
+//function printMultiplicationTables() {
+  //  let header = '\t'
+    //for (let i = 1; i < 10; i++) {
+      //  header += ${i}\t
+        
+    //}
+    //console.log(header);
+    //console.log('-----------------------------------------------------------------------------');
+    
+    //for (let i = 0; i < 10; i++) {
+      //  let row =`${i.toString().padEnd(2)}   |\t`
+        //for (let j = 0; j < array.length; j++) {
+          // // console.log(`${i} x ${i} = ${i*j}`);
+          // row += `${i*j}\t`
+        //}
+        //console.log(row);
+    
